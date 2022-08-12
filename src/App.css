@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  border: 2px solid black;
+}
+
+.radio-form {
+  display: flex;
+  margin-top: 25px;
+}
+
+.radio-button {
+  width: 25px;
+  height: 25px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin-top: 25px;
+}
+
+.grid-div {
+  border: 1px solid black;
+}
+
+.grid-div:hover {
+  cursor: pointer;
+}
+
+.reset-button {
+  appearance: none;
+  height: 50px;
+  border: none;
+  margin-top: 25px;
+  background-color: red;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
