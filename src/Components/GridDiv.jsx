@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
 export const GridDiv = ({ props }) => {
-	console.log(props);
 
 	const [color, setColor] = useState('');
 
